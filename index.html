@@ -3,7 +3,30 @@
     <head>
         <!--Aqui anado la codificacion de caracteres-->
         <meta charset="UTF-8">
+        <!--Este HTML se puede ver en cualquier dispoitivo, se adapta-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Anadimos estilos CSS desde la carpeta estilos-->
+        <link rel="stylesheet" href="estilos/estilos.css">
         <title>Mi primera página webb</title>
+        <!--Segunda forma de poner estilos en html-->
+        <!--<style>
+            /*Estilos para el body*/
+            body{
+                background-color:black;
+                font-size: 25px;
+            }
+            /*Estilo para la calse cabecera*/
+            header{
+                background-color: blueviolet;
+                font-size: 50px;
+            }
+            /*Estilos para la etiqueta img*/
+            img{
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+            }
+        </style>-->
     </head>
     <body>
         <!--Aqui va el header-->
@@ -22,19 +45,53 @@
                     <span>Navegacion</span>
                 </a>
                 <!--Header navegacion menu derecho-->
-                <div>
+                <div ><!--style="background-color: black; width: 100%; height: 200px; color: aqua; font-size: 50px;"> Esto es la primera forma incorrecta de implementar estilo CSS-->
                     <!--Implemento una lista desordenada-->
                     <ul>
                         <!--Cuenda de usuario-->
                         <li>
                             <a href="">
-                                <img src="img/descarga.jpg" width="300px" height="300px" alt="Grrrrr">
+                                <img src="img/descarga.jpg" width="200px" height="200px" alt="Grrrrr">
+                                <span>FERUS</span>
+                                <ul>
+                                    <!--Imagen de usuario-->
+                                    <li>
+                                        <img src="img/descarga.jpg" alt="Imagen de usuario">
+                                        <p>
+                                            <small>FERUS</small>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <!--Menu Footer>-->
+                                    </li>
+                                    <div>
+                                        <a href="#">Cerrar Sesion</a>
+                                    </div>
+                                </ul>
                             </a>
                         </li>
                     </ul>
                 </div>
-            </nav>
-        </header>
-    
+            </nav> <!--Fin del nav-->
+        </header><!--Fin del header-->
     </body>
+    <!--Aqui va el header-->
+    <header class="header">...
+    </header> <!--Fin del header-->
+    <!--Columna de aside del lado izquierdo, contiene un logo y el sidebar-->
+    <aside class="main-sidebar">
+        <!--Estilos que se pueden encontrar en sidebar, less-->
+        <section class="sidebar">
+            <!--Menu del sidebar-->
+            <ul class="sidebar">
+                <li class="header">Menu</li>
+                <a href="">
+                    <li>
+                        <i class="fa fa-cogs"></i>
+                        Configuracion
+                    </li>
+                </a>
+            </ul>
+        </section>
+    </aside>
 </html>
